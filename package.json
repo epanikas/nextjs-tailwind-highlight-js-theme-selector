@@ -6,7 +6,8 @@
     "dev": "cross-env NODE_ENV=development && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "highlight.js-prefix": "tsx src/scripts/prefix-highlight-js-themes.ts"
   },
   "dependencies": {
     "@types/node": "^20.12.11",
@@ -16,11 +17,13 @@
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.2.3",
+    "highlight.js": "^11.10.0",
     "next": "14.2.3",
     "node-html-parser": "^6.1.13",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "postcss-selector-prefix": "^5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
@@ -29,6 +32,7 @@
     "eslint-config-next": "14.2.3",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
+    "tsx": "^4.19.0",
     "typescript": "^5"
   }
 }
