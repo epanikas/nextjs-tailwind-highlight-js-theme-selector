@@ -23,7 +23,7 @@ export async function CodeComp(props: CodeCompProps) {
 
     await import(`../../hljs/styles/prefixed-${hljsTheme}.css`)
     return (
-        <div className={`p-4 inline-block text-left hljs-theme-${hljsTheme}`}>
+        <div className={`px-4 pb-4 inline-block text-left hljs-theme-${hljsTheme}`}>
             <pre>
                 <code lang={language} className={"hljs"} dangerouslySetInnerHTML={{__html: html}}/>
             </pre>

@@ -19,16 +19,37 @@ export default function Home(): JSX.Element {
                 highlight.js theme selector
             </h1>
 
-            <div className={"w-full mx-auto text-2xl p-12 text-center"}>
-                <p>
-                    this project demonstrates a method to make different themes of highlight.js to coexist on the same page
-                </p>
-                <p>
-                    the page is split up to two parts: dark and light, where each theme is displayed
-                </p>
-                <p>
-                    using this presentation one can easily choose a theme best matching their needs, whether it be for a light-themed or dark-themed site
-                </p>
+            <div className={"max-w-[1324px] mx-auto text-xl p-4 text-center"}>
+                <div className={"mb-4"}>
+                    This project demonstrates a method to make different themes of highlight.js to coexist on the same
+                    page by scoping each theme to a particular component by prefixing CSS files with the name of the
+                    theme.
+                </div>
+                <div className={"mb-4"}>
+                    The page is split up to two parts: dark and light, and each theme is displayed on both sides.
+                </div>
+                <div className={"mb-4"}>
+                    This presentation allows choosing a theme best matching required background, whether it be for a
+                    light-themed or dark-themed site
+                </div>
+                <div className={"mb-0"}>
+                    The full article is available here:
+                </div>
+                <div className={"mb-4"}>
+                    <a href={"https://epanikas.hashnode.dev/highlight-your-code-scope-highlightjs-theme-to-a-single-component"}
+                       className={"underline"}>
+                        Highlight your code: scope highlight.js theme to a single component
+                    </a>
+                </div>
+                <div className={"mb-0"}>
+                    The code of the project is available here:
+                </div>
+                <div className={"mb-4"}>
+                    <a href={"https://github.com/epanikas/nextjs-tailwind-highlight-js-theme-selector"}
+                       className={"underline"}>
+                        https://github.com/epanikas/nextjs-tailwind-highlight-js-theme-selector
+                    </a>
+                </div>
             </div>
 
             <div className={"grid lg:grid-cols-2 sm:grid-cols-1 gap-2 mx-2"}>
